@@ -1,15 +1,15 @@
 const colors = [
-  "#FFFFFF",
-  "#2196F3",
-  "#4CAF50",
-  "#FF9800",
-  "#009688",
-  "#795548",
+  '#FFFFFF',
+  '#2196F3',
+  '#4CAF50',
+  '#FF9800',
+  '#009688',
+  '#795548',
 ];
 
 const maxNumber = colors.length - 1;
-const startBtn = document.querySelector("[data-action=start]");
-const stopBtn = document.querySelector("[data-action=stop]");
+const startBtn = document.querySelector('[data-action=start]');
+const stopBtn = document.querySelector('[data-action=stop]');
 
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -35,5 +35,5 @@ const onStopBtnClick = () => {
   isBgColorSwithOn = false;
 };
 
-startBtn.addEventListener("click", onStartBtnClick);
-stopBtn.addEventListener("click", onStopBtnClick);
+startBtn.addEventListener('click', onStartBtnClick);
+stopBtn.addEventListener('click', onStopBtnClick);
